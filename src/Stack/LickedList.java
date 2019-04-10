@@ -1,8 +1,6 @@
-package LinkList;
+package Stack;
 
-import java.util.LinkedList;
-
-public class linklist<E> {
+public class LickedList<E> {
     private class  Node{
         public E e;
         public Node next;
@@ -26,12 +24,12 @@ public class linklist<E> {
 
     private Node dummyHead;
     private int size;
-    public linklist(){
+    public LickedList(){
         dummyHead = new Node(null,null);
         size = 0;
     }
 
-    public int GetSize(){
+    public int getSize(){
         return size;
     }
 
@@ -91,7 +89,7 @@ public class linklist<E> {
         Node cur = dummyHead.next;
         for(int i = 0; i<index; i++)
             cur = cur.next;
-       cur.e = e;
+        cur.e = e;
 
     }
 
