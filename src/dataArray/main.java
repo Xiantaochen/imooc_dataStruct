@@ -8,6 +8,7 @@ public class main {
             arr.addLast(i);
         }
         arr.add(3,6);
+        System.out.println(arr.getSize());
         System.out.println(arr);
 //        int [] arr = new int[10];
 //        for(int i=0 ;i<arr.length;i++){
